@@ -24,7 +24,7 @@ public class HomeController {
     }
 
     @GetMapping("/professores")
-    public String contatos(Model model) {
+    public String prof (Model model) {
         List<Professor> listaDeProfessores = db.query(
                 "select * from professores",
                 (res, rowNum) -> {

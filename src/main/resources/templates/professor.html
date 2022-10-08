@@ -17,7 +17,14 @@
             <td th:text="${prof.nome}"></td>
             
         </tr>
+
         </tbody>
+        <tbody>
+            <tr th:each="prof : ${professor}">
+                <td th:text="${prof.id}"></td>
+                <td th:text="${prof.nome}"></td>
+        
+            </tr>
     </table>
 </div>
 </body>
