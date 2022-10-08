@@ -15,16 +15,15 @@
         <tr th:each="prof : ${professor}">
             <td th:text="${prof.id}"></td>
             <td th:text="${prof.nome}"></td>
+            <td>
+                <a th:href = "@{/excluir-professor(id=${prof.id})}">Excluir</a>
+                <a th:href="@{/editar-professor(id=${prof.id})}">Editar</a>
+            </td>
             
         </tr>
 
         </tbody>
-        <tbody>
-            <tr th:each="prof : ${professor}">
-                <td th:text="${prof.id}"></td>
-                <td th:text="${prof.nome}"></td>
-        
-            </tr>
+    
     </table>
 </div>
 </body>
